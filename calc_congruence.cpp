@@ -12,11 +12,13 @@ int calc_congruence(int a[], int b[], int n)
 {
 	int c = 1;
 	int k;
-	for(k = 0; k < n; k++){
+	for(k = 0; k < n; k++)
+	{
 		c*= b[k];
 	}
 	int gcd = 0;
-	for(k = 0; k < n; k++){
+	for(k = 0; k < n; k++)
+	{
 		gcd = GCD(gcd, b[k]);
 	}
 	for(k = 0; k < n; k++)
